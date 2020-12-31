@@ -12,18 +12,23 @@
    </head>
    <body>
 
-      <div style="padding:20px;margin-top:30px;height:1500px;">
-         <h1>View scRNA-seq DATA</h1>
+      <style type="text/css">
+         .wdiv{margin-top:30px;width=500px;height:1600px;}
+         .fldiv{margin-top:60px;width=240px;height:1500px;float:left}
+         .frdiv{margin-top:30px;width=240px;height:1500px;float:right}
+      </style>
 
+      <div style="padding:5px;">
+         <div class="fldiv">    -->
+            {% include '_sidebar.html' %}    
+         </div>
 
-      
-         {% block content %}
-         {% endblock %}     
-      
-      
+         <div class="frdiv">
+            {% block rightblock %}
+            {% endblock %} 
+         </div>
 
- 
-      </div> 
+      </div>
 
    </body>
 
